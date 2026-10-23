@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Access Blocked</title>
+  <style>
+    body {
+      font-family: Arial;
+      text-align: center;
+      padding: 40px;
+      background: #fff3f3;
+    }
+    .box {
+      background: white;
+      padding: 25px;
+      border-radius: 10px;
+      display: inline-block;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    .risk { font-weight: bold; margin-top: 10px; }
+    .high { color: red; }
+    .medium { color: orange; }
+    .low { color: green; }
+  </style>
+</head>
+
+<body>
+
+  <div class="box">
+    <h1>Access Blocked</h1>
+    <p>This website was identified as a potential phishing threat.</p>
+
+    <!-- THESE IDS MUST EXIST -->
+    <div id="details"></div>
+    <div id="riskLevel" class="risk"></div>
+
+    <button id="goBackBtn">Go Back Safely</button>
+  </div>
+
+  <script src="warning.js"></script>
+</body>
+</html>
